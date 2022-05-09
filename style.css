@@ -1,0 +1,33 @@
+body {
+    background-color: #303030;
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#validate {
+    background-color: #0084ff;
+    border: none;
+    width: 200px;
+    height: 30px;
+    font-size: 20px;
+    color: #fff;
+}
+
+#email {
+    width: 300px;
+    height: 25px;
+    margin-right: 30px;
+}
+
+#form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
