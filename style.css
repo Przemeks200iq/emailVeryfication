@@ -18,6 +18,11 @@ main {
     height: 30px;
     font-size: 20px;
     color: #fff;
+    cursor: pointer;
+}
+
+#validate:hover {
+    background-color: #50a4f1;
 }
 
 #email {
@@ -58,4 +63,13 @@ main {
 
 .noRight {
     border-right: none;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+#table {
+    opacity: 0;
+    transition: opacity 0.2s linear;
 }
