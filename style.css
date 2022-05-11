@@ -18,6 +18,11 @@ main {
     height: 30px;
     font-size: 20px;
     color: #fff;
+    cursor: pointer;
+}
+
+#validate:hover {
+    background-color: #50a4f1;
 }
 
 #email {
