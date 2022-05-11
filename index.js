@@ -1,13 +1,14 @@
 import { connect } from "./src/connent.js";
 const button = document.getElementById("validate");
 const input = document.getElementById("email");
-const inputSpan = document.getElementById("emailValidate");
 const table = document.getElementById("table");
 
 const validate = async () => {
+    table.style.opacity = 0;
     const data = await connect(input.value);
     const { valid } = data;
     if (valid === false) {
+        table.style.opacity = 1;
         table.innerHTML = `
         <div class="container">
             <div class="content purple noRight">INFORMATION</div>
@@ -20,6 +21,7 @@ const validate = async () => {
         `;
     } else {
         const { valid, disposable, domain, text, reason } = data;
+        table.style.opacity = 1;
         table.innerHTML = `<div class="container">
                                 <div class="content purple noRight">INFORMATION</div>
                                 <div class="content purple">RESULT</div>

@@ -68,3 +68,8 @@ main {
 .hidden {
     opacity: 0;
 }
+
+#table {
+    opacity: 0;
+    transition: opacity 0.2s linear;
+}
