@@ -21,33 +21,10 @@
                 <input type="text" id="email" placeholder="Type your email" />
                 <button id="validate">Validate</button>
             </div>
-            <!-- sample information -->
-            <div style="margin-top: 30px">
-                <div class="container">
-                    <div class="content purple noRight">INFORMATION</div>
-                    <div class="content purple">RESULT</div>
-                </div>
-                <div class="container">
-                    <div class="content">Valid</div>
-                    <div class="content">True</div>
-                </div>
-                <div class="container">
-                    <div class="content">Disposible</div>
-                    <div class="content">False</div>
-                </div>
-                <div class="container">
-                    <div class="content">Domain</div>
-                    <div class="content">gmail.com</div>
-                </div>
-                <div class="container">
-                    <div class="content">Text</div>
-                    <div class="content">Looks okay</div>
-                </div>
-                <div class="container">
-                    <div class="content">Reason</div>
-                    <div class="content">Whitelisted</div>
-                </div>
-            </div>
+            <span class="hidden" id="emailValidate" style="color: red"
+                >Type valid address email</span
+            >
+            <div style="margin-top: 30px" id="table"></div>
         </main>
         <script type="module" src="index.js"></script>
     </body>
