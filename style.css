@@ -24,10 +24,38 @@ main {
     width: 300px;
     height: 25px;
     margin-right: 30px;
+    padding-left: 15px;
+}
+
+#email::placeholder {
+    text-align: center;
 }
 
 #form {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.container {
+    display: flex;
+    width: 500px;
+    height: 35px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    border: 1px solid #fff;
+    height: 35px;
+}
+
+.purple {
+    color: #da81da;
+}
+
+.noRight {
+    border-right: none;
 }
